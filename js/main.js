@@ -17,7 +17,7 @@ const servicios = [
     duracion: 30,
     precio: 45000,
     descripcion: 'Diseño y definición suave que favorece tu rostro. Técnica profesional con resultados naturales.',
-    img: 'img/servicios/cejas.jpg'
+    img: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&q=80'
   },
   {
     id: 'pestanas-naturales',
@@ -25,7 +25,7 @@ const servicios = [
     duracion: 30,
     precio: 55000,
     descripcion: 'Lifting sutil para mirada fresca sin exceso. Efecto natural que realza tus ojos.',
-    img: 'img/servicios/pestanas.jpg'
+    img: 'https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=500&q=80'
   },
   {
     id: 'skin-flash',
@@ -33,7 +33,7 @@ const servicios = [
     duracion: 30,
     precio: 60000,
     descripcion: 'Limpieza profunda y glow inmediato para eventos. Resultados visibles al instante.',
-    img: 'img/servicios/skin.jpg'
+    img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&q=80'
   },
   {
     id: 'manicure-express',
@@ -41,7 +41,7 @@ const servicios = [
     duracion: 30,
     precio: 40000,
     descripcion: 'Manos impecables con esmaltado semipermanente. Secado rápido, larga duración.',
-    img: 'img/servicios/manicure.jpg'
+    img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80'
   },
   {
     id: 'makeup-glow',
@@ -49,7 +49,7 @@ const servicios = [
     duracion: 30,
     precio: 70000,
     descripcion: 'Maquillaje natural con glow para el día a día. Técnica que resalta tu belleza.',
-    img: 'img/servicios/makeup.jpg'
+    img: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&q=80'
   },
   {
     id: 'depilacion-facial',
@@ -57,7 +57,7 @@ const servicios = [
     duracion: 30,
     precio: 35000,
     descripcion: 'Rostro suave y limpio con técnicas suaves. Sin irritación, resultados duraderos.',
-    img: 'img/servicios/depilacion.jpg'
+    img: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=500&q=80'
   }
 ];
 
@@ -69,8 +69,8 @@ const productos = [
     categoria: 'kits',
     precio: 120000,
     beneficio: 'Rutina simple AM/PM para brillo saludable. Todo lo que necesitas en un solo kit.',
-    img: 'img/productos/kit-glow.jpg',
-    ig: 'https://instagram.com/p/XXXXX',
+    img: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   },
   {
@@ -79,8 +79,8 @@ const productos = [
     categoria: 'maquillaje',
     precio: 38000,
     beneficio: 'Hidratación con brillo sutil sin pegajosidad. Labios suaves todo el día.',
-    img: 'img/productos/lip-serum.jpg',
-    ig: 'https://instagram.com/p/YYYYY',
+    img: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   },
   {
@@ -89,8 +89,8 @@ const productos = [
     categoria: 'accesorios',
     precio: 45000,
     beneficio: 'Masaje facial para desinflamar y relajar. Jade 100% natural.',
-    img: 'img/productos/jade-roller.jpg',
-    ig: 'https://instagram.com/p/ZZZZZ',
+    img: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   },
   {
@@ -99,8 +99,8 @@ const productos = [
     categoria: 'facial',
     precio: 85000,
     beneficio: 'Ilumina y unifica el tono de tu piel. Fórmula concentrada con resultados visibles.',
-    img: 'img/productos/serum-vitamina-c.jpg',
-    ig: 'https://instagram.com/p/AAAAA',
+    img: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   },
   {
@@ -109,8 +109,8 @@ const productos = [
     categoria: 'facial',
     precio: 52000,
     beneficio: 'Hidratación profunda en 15 minutos. Piel suave y radiante al instante.',
-    img: 'img/productos/mascara.jpg',
-    ig: 'https://instagram.com/p/BBBBB',
+    img: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   },
   {
@@ -119,8 +119,8 @@ const productos = [
     categoria: 'maquillaje',
     precio: 35000,
     beneficio: 'Cejas en su lugar todo el día sin efecto pesado. Fijación natural.',
-    img: 'img/productos/brow-gel.jpg',
-    ig: 'https://instagram.com/p/CCCCC',
+    img: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   },
   {
@@ -129,8 +129,8 @@ const productos = [
     categoria: 'accesorios',
     precio: 48000,
     beneficio: 'Esculpe y tonifica tu rostro naturalmente. Cuarzo rosa original.',
-    img: 'img/productos/gua-sha.jpg',
-    ig: 'https://instagram.com/p/DDDDD',
+    img: 'https://images.unsplash.com/photo-1570554886111-e80fcca6a029?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   },
   {
@@ -139,8 +139,8 @@ const productos = [
     categoria: 'kits',
     precio: 145000,
     beneficio: 'Rutina nocturna completa para piel radiante. 4 productos esenciales.',
-    img: 'img/productos/kit-noche.jpg',
-    ig: 'https://instagram.com/p/EEEEE',
+    img: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   },
   {
@@ -149,8 +149,8 @@ const productos = [
     categoria: 'maquillaje',
     precio: 42000,
     beneficio: 'Glow natural en mejillas y párpados. Textura cremosa fácil de difuminar.',
-    img: 'img/productos/highlighter.jpg',
-    ig: 'https://instagram.com/p/FFFFF',
+    img: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: false
   },
   {
@@ -159,8 +159,8 @@ const productos = [
     categoria: 'facial',
     precio: 58000,
     beneficio: 'Limpieza profunda sin resecar. Para todo tipo de piel.',
-    img: 'img/productos/limpiador.jpg',
-    ig: 'https://instagram.com/p/GGGGG',
+    img: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   },
   {
@@ -169,8 +169,8 @@ const productos = [
     categoria: 'accesorios',
     precio: 22000,
     beneficio: 'Exfoliación suave diaria. 100% natural y biodegradable.',
-    img: 'img/productos/esponja.jpg',
-    ig: 'https://instagram.com/p/HHHHH',
+    img: 'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   },
   {
@@ -179,8 +179,8 @@ const productos = [
     categoria: 'kits',
     precio: 98000,
     beneficio: 'Todo lo necesario en tamaño viaje. Perfecto para llevar a todos lados.',
-    img: 'img/productos/kit-viaje.jpg',
-    ig: 'https://instagram.com/p/IIIII',
+    img: 'https://images.unsplash.com/photo-1556228841-25d98264b556?w=500&q=80',
+    ig: 'https://instagram.com/glow.express',
     disponible: true
   }
 ];
@@ -217,7 +217,7 @@ const testimonios = [
 // ==== [HELPER: Generar link WhatsApp con UTM] ====
 function waLink(texto) {
   const base = `https://wa.me/${WHATSAPP_NUMBER}`;
-  const utm = '?utm_source=web&utm_medium=cta&utm_campaign=glowexpress';
+  const utm = '&utm_source=web&utm_medium=cta&utm_campaign=glowexpress';
   return `${base}?text=${encodeURIComponent(texto)}${utm}`;
 }
 
@@ -246,12 +246,6 @@ function setCurrentYear() {
 
 // ==== [INIT: Links WhatsApp globales] ====
 function initWhatsAppLinks() {
-  // Hero CTA
-  const heroCta = document.getElementById('hero-cta-whatsapp');
-  if (heroCta) {
-    heroCta.href = waLink('Hola Glow Express, quiero agendar un servicio');
-  }
-
   // Footer CTA
   const footerCta = document.getElementById('footer-cta-whatsapp');
   if (footerCta) {
@@ -273,12 +267,6 @@ function initWhatsAppLinks() {
       window.open(floatWa.href, '_blank');
       showToast('Abriendo WhatsApp...');
     });
-  }
-
-  // CTA Servicios
-  const ctaServicios = document.getElementById('cta-servicios-whatsapp');
-  if (ctaServicios) {
-    ctaServicios.href = waLink('Hola, necesito ayuda para elegir un servicio');
   }
 
   // CTA Productos
@@ -306,8 +294,7 @@ function renderServicios() {
     card.className = 'col-md-6 col-lg-4';
     card.innerHTML = `
       <div class="service-card">
-        <img src="${servicio.img}" alt="${servicio.nombre}" class="service-card__image" loading="lazy">
-        <!-- Reemplaza por foto real -->
+        <img src="${servicio.img}" alt="${servicio.nombre}" class="service-card__image" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/FF4DA6/FFFFFF?text=${encodeURIComponent(servicio.nombre)}'">
         <div class="service-card__body">
           <h3 class="service-card__title">${servicio.nombre}</h3>
           <p class="service-card__description">${servicio.descripcion}</p>
@@ -368,8 +355,7 @@ function renderProductos() {
     card.className = 'col-md-6 col-lg-4 col-xl-3';
     card.innerHTML = `
       <div class="product-card">
-        <img src="${producto.img}" alt="${producto.nombre}" class="product-card__image" loading="lazy">
-        <!-- Reemplaza por foto real -->
+        <img src="${producto.img}" alt="${producto.nombre}" class="product-card__image" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/FF4DA6/FFFFFF?text=${encodeURIComponent(producto.nombre)}'">
         <div class="product-card__body">
           <h3 class="product-card__name">${producto.nombre}</h3>
           <p class="product-card__benefit">${producto.beneficio}</p>
@@ -417,10 +403,21 @@ function initProductFilters() {
   const priceRange = document.getElementById('priceRange');
   const priceValue = document.getElementById('priceRangeValue');
   if (priceRange && priceValue) {
+    // Actualizar el gradiente del slider en tiempo real
+    const updateRangeProgress = () => {
+      const value = parseInt(priceRange.value);
+      const max = parseInt(priceRange.max);
+      const progress = (value / max) * 100;
+      priceRange.style.setProperty('--range-progress', `${progress}%`);
+    };
+    
+    updateRangeProgress(); // Inicializar
+    
     priceRange.addEventListener('input', (e) => {
       const value = parseInt(e.target.value);
       currentFilters.precioMax = value;
       priceValue.textContent = `$0 - ${formatPrice(value)}`;
+      updateRangeProgress();
       renderProductos();
     });
   }
