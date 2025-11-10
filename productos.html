@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Glow Express | Productos</title>
+    <meta name="description" content="Servicios de belleza express y productos que favorecen tu estilo. Agenda fácil por WhatsApp en minutos.">
+    <meta property="og:title" content="Glow Express | Belleza exprés en 30 minutos">
+    <meta property="og:description" content="Servicios de belleza express y productos que favorecen tu estilo.">
+    <meta property="og:image" content="img/hero/hero-main.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="imge/png" href="img/img_atras.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Img_logo.jpg" alt="Glow Express Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==== [SECCIÓN: HERO SECUNDARIO] Ubicación: productos.html, fila 2 ==== -->
+    <section class="hero-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="hero-secondary__title">Nuestros Productos</h1>
+                    <p class="hero-secondary__subtitle">Seleccionados para realzar tu belleza natural</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== [SECCIÓN: FILTROS] Ubicación: productos.html, fila 3 ==== -->
+    <section class="filters-section py-4 bg-light">
+        <div class="container">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-6">
+                    <label class="form-label mb-2"><strong>Categoría:</strong></label>
+                    <div class="btn-group d-flex flex-wrap" role="group" id="categoryFilters">
+                        <input type="radio" class="btn-check" name="category" id="cat-all" value="all" checked>
+                        <label class="btn btn-outline-primary" for="cat-all">Todos</label>
+
+                        <input type="radio" class="btn-check" name="category" id="cat-kits" value="kits">
+                        <label class="btn btn-outline-primary" for="cat-kits">Kits</label>
+
+                        <input type="radio" class="btn-check" name="category" id="cat-maquillaje" value="maquillaje">
+                        <label class="btn btn-outline-primary" for="cat-maquillaje">Maquillaje</label>
+
+                        <input type="radio" class="btn-check" name="category" id="cat-facial" value="facial">
+                        <label class="btn btn-outline-primary" for="cat-facial">Cuidado Facial</label>
+
+                        <input type="radio" class="btn-check" name="category" id="cat-accesorios" value="accesorios">
+                        <label class="btn btn-outline-primary" for="cat-accesorios">Accesorios</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="priceRange" class="form-label"><strong>Rango de precio:</strong> <span id="priceRangeValue">$0 - $200,000</span></label>
+                    <input type="range" class="form-range" min="0" max="200000" step="10000" value="200000" id="priceRange">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== [SECCIÓN: GRID PRODUCTOS] Ubicación: productos.html, fila 4 ==== -->
+    <!-- Se renderiza dinámicamente desde JS -->
+    <section class="productos-grid py-5" id="productos-grid">
+        <div class="container">
+            <div class="row g-4" id="productosContainer">
+                <!-- Cards de productos se inyectan aquí desde main.js -->
+            </div>
+            <div class="row" id="noResultsMessage" style="display: none;">
+                <div class="col text-center py-5">
+                    <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                    <p class="text-muted">No se encontraron productos con los filtros seleccionados</p>
+                    <button class="btn btn-outline-primary" onclick="document.getElementById('cat-all').click(); document.getElementById('priceRange').value = 200000; document.getElementById('priceRange').dispatchEvent(new Event('input'));">
+                        Limpiar filtros
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== [SECCIÓN: CTA PRODUCTOS] Ubicación: productos.html, fila 5 ==== -->
+    <section class="cta-productos py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-3">¿Necesitas ayuda para elegir?</h2>
+            <p class="mb-4">Contáctanos y te asesoramos sin compromiso</p>
+            <a href="#" class="btn btn-primary btn-lg me-2" id="cta-productos-whatsapp">
+                <i class="fab fa-whatsapp me-2"></i>WhatsApp
+            </a>
+            <a href="https://instagram.com/glow.express" target="_blank" class="btn btn-outline-light btn-lg">
+                <i class="fab fa-instagram me-2"></i>Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- ==== [SECCIÓN: FOOTER] Ubicación: productos.html, fila 6 ==== -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="footer__title">Glow Express</h5>
+                    <p class="footer__text">Belleza real en 30 minutos</p>
+                    <div class="footer__social">
+                        <a href="https://instagram.com/glow.express" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" id="footer-whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="footer__title">Navegación</h5>
+                    <ul class="footer__links">
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer__title">Legal</h5>
+                    <ul class="footer__links">
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p class="footer__copyright">© <span id="currentYear"></span> Glow Express. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==== [COMPONENTE: BOTÓN FLOTANTE WHATSAPP] Ubicación: productos.html, fila 7 ==== -->
+    <a href="#" class="whatsapp-float" id="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ==== [COMPONENTE: TOAST] Ubicación: productos.html, fila 8 ==== -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="mainToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Glow Express</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body" id="toastMessage">
+                Mensaje
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Main JS -->
+    <script src="js/main.js" defer></script>
+
+</body>
+</html>
