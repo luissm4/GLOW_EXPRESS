@@ -1,10 +1,3 @@
-/*
-==== ARCHIVO: js/main.js ====
-Propósito: Lógica de interacciones, render dinámico, validaciones, filtros
-Dependencias: Bootstrap 5 JS
-Dónde editar: Arrays de datos (servicios, productos, testimonios), número de WhatsApp
-*/
-
 // ==== [CONFIG: WhatsApp] ====
 const WHATSAPP_NUMBER = '573001112233';
 
@@ -15,7 +8,7 @@ const servicios = [
     img:'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80' },
   { id:'pestanas-naturales', nombre:'Pestañas Naturales', duracion:30, precio:55000,
     descripcion:'Lifting sutil para mirada fresca sin exceso. Efecto natural que realza tus ojos.',
-    img:'https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=800&q=80' },
+    img:'https://images.unsplash.com/photo-1637851496670-2bdc6c548d27?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
   { id:'skin-flash', nombre:'Skin Flash 30\'', duracion:30, precio:60000,
     descripcion:'Limpieza profunda y glow inmediato para eventos. Resultados visibles al instante.',
     img:'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80' },
@@ -67,7 +60,7 @@ const productos = [
     img:'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=800&q=80', ig:'https://instagram.com/glow.express', disponible:true },
   { id:'kit-viaje', nombre:'Kit Viaje Esenciales', categoria:'kits', precio:98000,
     beneficio:'Todo lo necesario en tamaño viaje. Perfecto para llevar a todos lados.',
-    img:'https://images.unsplash.com/photo-1556228841-25d98264b556?w=800&q=80', ig:'https://instagram.com/glow.express', disponible:true }
+    img:'https://images.unsplash.com/photo-1701686794515-8e83954d609a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', ig:'https://instagram.com/glow.express', disponible:true }
 ];
 
 // ==== [DATA: Testimonios] ====
